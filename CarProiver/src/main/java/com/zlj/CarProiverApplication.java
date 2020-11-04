@@ -13,7 +13,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableScheduling //启用定时任务
+@EnableScheduling //启用定时任务12
 public class CarProiverApplication {
     public static void main(String[] args) {
         SpringApplication.run(CarProiverApplication.class,args);
