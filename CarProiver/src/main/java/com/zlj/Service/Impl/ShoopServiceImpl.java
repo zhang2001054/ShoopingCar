@@ -85,7 +85,7 @@ public class ShoopServiceImpl implements ShoopService {
     public JsResult ShopV2(ShoqueryDto dto) {
 
 
-        
+
         return null;
     }
 
