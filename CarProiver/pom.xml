@@ -50,6 +50,19 @@
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.zlj</groupId>
+            <artifactId>carentity</artifactId>
+            <version>0.1</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zlj</groupId>
+            <artifactId>carCommon</artifactId>
+            <version>0.1</version>
+        </dependency>
+
     </dependencies>
 
 

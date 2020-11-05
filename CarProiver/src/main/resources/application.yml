@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    nacos:
+      discovery:  #实现注册中心地址
+        server-addr: 10.8.154.6:8848
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/t_shoup?serverTimezone=Asia/Shanghai
+    username: root
+    password: zhang19951
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
