@@ -52,6 +52,14 @@ public class RedissonUtil {
         client.getScoredSortedSet(key).addAll(vals);
     }
 
+    public static void setHash(String key,String val,Object file){
+        client.getMap(key).put(val,file);
+    }
+
+    public static void serHashAll(String key,Map<String,Object> map){
+        client.getMap(key).putAll(map);
+    }
+
     // 查询
     public static String getStr(String key){
         return client.getBucket(key).get().toString();
@@ -70,6 +78,12 @@ public class RedissonUtil {
     }
     public static boolean checkKey(String key){
         return client.getKeys().countExists(key) > 0;
+    }
+    public static boolean checkField(String key,String file){
+        return client.getMap(key).containsKey(file);
+    }
+    public static Object getHash(String key,String file){
+        return client.getMap(key).get(file);
     }
 
     // 设置有效期

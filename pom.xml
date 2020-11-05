@@ -8,6 +8,7 @@
         <module>CarCommon</module>
         <module>CarEntity</module>
         <module>CarApi</module>
+        <module>IndentProiver</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
